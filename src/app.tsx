@@ -32,8 +32,7 @@ export function App() {
           <circle cx="272" cy="14" r="5" />
         </svg>
         <p class="lead">თამაში, სადაც სპორტული ორიენტირება ჯანმრთელობის სამსახურშია.</p>
-        <p class="place">ბათუმის ბულვარი</p>
-        <p class="brand">Acıbadem</p>
+        <p class="how">მინიშნებებით იპოვეთ ადგილები რუკაზე. უპასუხეთ კითხვებს და მიაღწიეთ ფინიშს!</p>
         <div class="welcome-actions">
           <button type="button" class="map-open" onClick={() => setScreen('play')}>
             თამაში

@@ -55,7 +55,7 @@ export function TaskCard({
 
   return (
     <div class="task-card">
-      <p class="clue-label">{variant.category ?? 'დავალება'}</p>
+      <p class="clue-label">ნაბიჯი 2 · უპასუხე კითხვას</p>
       <p class="clue-text">{variant.q}</p>
       {variant.hint && <p class="clue-text">{variant.hint}</p>}
       {task.type === 'anagram' ? (
@@ -104,6 +104,7 @@ function Anagram({
 
   return (
     <div class="anagram">
+      <p class="step-help">დააჭირე ასოებს რიგით, ბოლოს კი „შემოწმება“.</p>
       <div class="letter-row" aria-label="შედგენილი სიტყვა">
         {picked.length === 0 ? (
           <span class="letter-empty">ასოები აქ ჩაჯდება</span>

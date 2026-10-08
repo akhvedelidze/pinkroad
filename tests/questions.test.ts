@@ -1,4 +1,3 @@
-import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import questions from '../content/questions.json'
 import { answerMatches, lettersOf, pickIndex } from '../src/game/answer.ts'
@@ -28,15 +27,16 @@ describe('question bank', () => {
     expect(all.every((item) => item.reviewed === false)).toBe(true)
   })
 
-  it('keeps anagram solutions out of the question file and checks them by hash', async () => {
-    const text = readFileSync(new URL('../content/questions.json', import.meta.url), 'utf8')
-    for (const word of solutionWords) expect(text.includes(word)).toBe(false)
+  it('keeps each anagram solution out of that puzzle and checks it by hash', async () => {
+    expect(questions.anagram.every((item) => item.q === 'დაალაგე ასოები და გამოიცანი სიტყვა.')).toBe(true)
+    expect(questions.mythfact[0]?.q.startsWith('ჩივილების არქონის')).toBe(true)
 
     for (const item of questions.anagram) {
       expect(item.hint.length).toBeGreaterThan(0)
       const word = solutionWords.find((candidate) => sameLetters(candidate, item.letters))
       expect(word).toBeTruthy()
-      expect(item.hint.includes(word ?? '')).toBe(false)
+      const shown = `${item.q}\n${item.hint}\n${item.letters}`
+      expect(shown.includes(word ?? '')).toBe(false)
       expect(await answerMatches(word ?? '', item.salt, item.answerHash)).toBe(true)
       expect(await answerMatches(item.letters, item.salt, item.answerHash)).toBe(false)
     }

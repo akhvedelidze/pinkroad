@@ -22,10 +22,10 @@ test('a team finishes the route on a phone screen in debug mode', async ({ page 
     await page.getByRole('button', { name: 'გამოტოვე პუნქტი' }).click()
   }
 
-  await expect(status).toContainText(`${total}/${total}`)
-  await expect(status).toContainText('5 ქულა')
   await expect(page.getByText('მარშრუტი დასრულდა.')).toBeVisible()
-  await expect(page.getByText('ვარდისფერი (ROSE)')).toBeVisible()
+  await expect(page.getByText('ვარდისფერი')).toBeVisible()
+  await expect(page.locator('.result-score')).toHaveText('5')
+  await expect(page.locator('.result-attempt')).toHaveText('1')
   await expect(page.locator('.finish-code')).toHaveText(/^ROSE\.1\.\d+\.5\.[0-9a-f]{8}$/)
   await expect(page.getByRole('button', { name: 'გამოტოვე პუნქტი' })).toHaveCount(0)
 

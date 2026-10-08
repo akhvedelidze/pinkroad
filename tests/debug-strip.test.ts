@@ -5,7 +5,7 @@ import path from 'node:path'
 import { build, type Rollup } from 'vite'
 import { describe, expect, it } from 'vitest'
 
-const marker = 'გამოტოვე პუნქტი'
+const marker = '+5 ქულა'
 
 describe('debug stripping', () => {
   it(

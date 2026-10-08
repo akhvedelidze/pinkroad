@@ -22,8 +22,20 @@ export function TeamGate({ onBack, onJoin }: { onBack: () => void; onJoin: (team
         უკან
       </button>
       <h1>გუნდის შესვლა</h1>
-      <p class="lead">ჩაწერეთ გუნდის კოდი და სახელი. ფინიშზე ეს მონაცემები კოდში შევა.</p>
+      <p class="lead">შეიყვანეთ გუნდის კოდი და სახელწოდება. ფინიშზე თქვენი ქულები და შედეგი ამ მონაცემებს დაუკავშირდება.</p>
       <form class="team-form" onSubmit={submit}>
+        <label>
+          გუნდის სახელი
+          <input
+            value={name}
+            autoComplete="off"
+            maxLength={40}
+            onInput={(event) => {
+              setName(event.currentTarget.value)
+              setRejected(false)
+            }}
+          />
+        </label>
         <label>
           გუნდის კოდი
           <input
@@ -33,18 +45,6 @@ export function TeamGate({ onBack, onJoin }: { onBack: () => void; onJoin: (team
             maxLength={12}
             onInput={(event) => {
               setCode(event.currentTarget.value)
-              setRejected(false)
-            }}
-          />
-        </label>
-        <label>
-          გუნდის სახელი
-          <input
-            value={name}
-            autoComplete="off"
-            maxLength={40}
-            onInput={(event) => {
-              setName(event.currentTarget.value)
               setRejected(false)
             }}
           />

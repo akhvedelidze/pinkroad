@@ -25,10 +25,10 @@
     ]
   },
   "tolerances": {
-    "practice": 150,
-    "navigator": 80,
-    "expert": 60,
-    "bonus": 100
+    "practice": 300,
+    "navigator": 160,
+    "expert": 120,
+    "bonus": 200
   },
   "mapBounds": {
     "south": 41.5312428,

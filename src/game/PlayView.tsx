@@ -129,6 +129,56 @@ export function PlayView({ onBack }: { onBack: () => void }) {
     return <TeamGate onBack={onBack} onJoin={(team) => update((current) => assignTeam(current, team))} />
   }
 
+  if (game.finished) {
+    return (
+      <main class="result-board">
+        <button type="button" class="map-back result-back" onClick={onBack}>
+          უკან
+        </button>
+        <p class="result-kicker">ფინიში</p>
+        <h1 class="result-title">მარშრუტი დასრულდა.</h1>
+        <p class="result-team-label">გუნდი</p>
+        <p class="result-team">{game.team.name}</p>
+        <p class="result-code-name">{game.team.code}</p>
+        <div class="result-grid">
+          <p class="result-cell">
+            <span>დრო</span>
+            <strong class="result-time">{formatElapsed(shownElapsed)}</strong>
+          </p>
+          <p class="result-cell">
+            <span>ქულა</span>
+            <strong class="result-score">{game.score}</strong>
+          </p>
+          <p class="result-cell">
+            <span>ცდა</span>
+            <strong class="result-attempt">{game.attempt}</strong>
+          </p>
+        </div>
+        <p class="result-judge">მსაჯის კოდი</p>
+        <p class="finish-code">{finishText || 'კოდი იწერება…'}</p>
+        <button
+          type="button"
+          class="confirm-btn result-retry"
+          onClick={() => update((current) => retry(current, route[0]?.id ?? 'p01', Date.now()))}
+        >
+          სცადე ხელახლა
+        </button>
+      </main>
+    )
+  }
+
+  const skipButton = !solved && (
+    <button
+      type="button"
+      class="skip-point-btn"
+      onClick={() =>
+        update((current) => skipPoint(current, next?.id ?? null, Math.floor((Date.now() - current.startedAt) / 1000)))
+      }
+    >
+      გამოტოვე პუნქტი
+    </button>
+  )
+
   return (
     <MapView
       onBack={onBack}
@@ -155,38 +205,22 @@ export function PlayView({ onBack }: { onBack: () => void }) {
           {debugOn && (
             <DebugBar
               radiusM={point.toleranceM}
-              canSkip={!game.finished}
-              onSkip={() =>
-                update((current) =>
-                  skipPoint(current, next?.id ?? null, Math.floor((Date.now() - current.startedAt) / 1000)),
-                )
-              }
               onAdjust={(delta) => update((current) => adjustScore(current, delta, config.scoring.minPointScore))}
             />
           )}
-          <p class="clue-label">მინიშნება</p>
-          <p class="clue-text">{game.finished ? 'მარშრუტი დასრულდა.' : point.clue.riddle}</p>
+          {game.opened ? (
+            <p class="found-note">ადგილი ნაპოვნია</p>
+          ) : (
+            <>
+              <p class="clue-label">ნაბიჯი 1 · იპოვე ადგილი</p>
+              <p class="clue-text">{point.clue.riddle}</p>
+            </>
+          )}
         </div>
       }
       footer={
         <div class="play-footer">
-          {game.finished ? (
-            <div class="finish-card" role="status">
-              <p class="pin-note">ყველა პუნქტი გავლილია.</p>
-              <p class="clue-text">
-                {game.team.name} ({game.team.code})
-              </p>
-              <p class="pin-note">ცდა {game.attempt}</p>
-              <p class="finish-code">{finishText || 'კოდი იწერება…'}</p>
-              <button
-                type="button"
-                class="confirm-btn next-btn"
-                onClick={() => update((current) => retry(current, route[0]?.id ?? 'p01', Date.now()))}
-              >
-                სცადე ხელახლა
-              </button>
-            </div>
-          ) : game.opened ? (
+          {game.opened ? (
             <>
               <TaskCard
                 key={`${point.id}:${game.questionIndex}`}
@@ -196,7 +230,7 @@ export function PlayView({ onBack }: { onBack: () => void }) {
                 onCorrect={() => update((current) => awardTask(current, config.scoring.taskByAttempt, config.scoring.minPointScore))}
                 onWrong={() => update((current) => noteWrongTask(current))}
               />
-              {solved && (
+              {solved ? (
                 <button
                   type="button"
                   class="confirm-btn next-btn"
@@ -208,6 +242,8 @@ export function PlayView({ onBack }: { onBack: () => void }) {
                 >
                   {next ? 'შემდეგი პუნქტი' : 'დასრულება'}
                 </button>
+              ) : (
+                skipButton
               )}
             </>
           ) : (
@@ -216,12 +252,13 @@ export function PlayView({ onBack }: { onBack: () => void }) {
                 {waiting
                   ? `დადასტურება ${seconds} წამით იკეტება. რუკის ყურება შეიძლება.`
                   : guess
-                    ? 'ვარდისფერი ნიშანი დასმულია.'
-                    : 'შეეხე რუკას და დაადე ნიშანი.'}
+                    ? 'ნიშანი დასმულია. ახლა დააჭირე ღილაკს.'
+                    : 'მონიშნეთ სავარაუდო ადგილი რუკაზე'}
               </p>
               <button type="button" class="confirm-btn" disabled={!guess || waiting} onClick={confirm}>
                 {waiting ? `დაელოდე ${seconds} წამს` : 'აქ არის ჩემი პუნქტი'}
               </button>
+              {skipButton}
             </>
           )}
         </div>

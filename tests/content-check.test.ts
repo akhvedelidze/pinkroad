@@ -56,7 +56,7 @@ describe('content rules', () => {
 
   it('checks the real route bearings and finds the current overlaps', () => {
     const config = {
-      tolerances: { practice: 150, navigator: 80, expert: 60, bonus: 100 },
+      tolerances: { practice: 300, navigator: 160, expert: 120, bonus: 200 },
       mapBounds: { south: 41.5312428, west: 41.5594872, north: 41.7170258, east: 41.7456988 },
     }
     expect(structureIssues(points, tasks, config).filter((issue) => issue.code === 'bearing')).toEqual([])
