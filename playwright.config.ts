@@ -2,6 +2,8 @@ import { defineConfig } from '@playwright/test'
 
 const port = 4179
 
+const root = `http://127.0.0.1:${port}/pinkroad/`
+
 export default defineConfig({
   testDir: 'tests/e2e',
   timeout: 90_000,
@@ -9,7 +11,7 @@ export default defineConfig({
   workers: 1,
   reporter: 'list',
   use: {
-    baseURL: `http://127.0.0.1:${port}`,
+    baseURL: root,
     viewport: { width: 390, height: 844 },
     deviceScaleFactor: 1,
     isMobile: true,
@@ -17,7 +19,7 @@ export default defineConfig({
   },
   webServer: {
     command: `npm run dev -- --host 127.0.0.1 --port ${port} --strictPort`,
-    url: `http://127.0.0.1:${port}`,
+    url: root,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },

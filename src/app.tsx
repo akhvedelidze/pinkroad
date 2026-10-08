@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks'
 import { PlayView } from './game/PlayView.tsx'
 import { MapView } from './map/MapView.tsx'
+import { publicUrl } from './publicUrl.ts'
 
 const isStaging = import.meta.env.MODE === 'staging'
 
@@ -20,7 +21,7 @@ export function App() {
         <PlayView onBack={() => setScreen('welcome')} />
       ) : (
       <main class="welcome">
-        <img class="brand-logo" src="/pic/acibadem_logo.png" alt="Acıbadem" />
+        <img class="brand-logo" src={publicUrl('pic/acibadem_logo.png')} alt="Acıbadem" />
         <h1>მოგესალმებით</h1>
         <p class="event">ციფრული ბულვარი</p>
         <p class="route">ვარდისფერი მარშრუტი ბათუმში</p>

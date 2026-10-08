@@ -1,6 +1,7 @@
 import type { ComponentChildren } from 'preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { latLngToPixel, pixelToLatLng, type MapFrame } from '../geo/mercator.ts'
+import { publicUrl } from '../publicUrl.ts'
 
 type MapMeta = MapFrame & {
   tileSize: number
@@ -84,10 +85,10 @@ export function MapView({
   useEffect(() => {
     let cancelled = false
     Promise.all([
-      fetch('/map/meta.json').then((response) => response.json()),
-      fetch('/map/labels.json').then((response) => response.json()),
-      fetch('/map/streets.json').then((response) => (response.ok ? response.json() : [])),
-      fetch('/map/check-points.json').then((response) => response.json()),
+      fetch(publicUrl('map/meta.json')).then((response) => response.json()),
+      fetch(publicUrl('map/labels.json')).then((response) => response.json()),
+      fetch(publicUrl('map/streets.json')).then((response) => (response.ok ? response.json() : [])),
+      fetch(publicUrl('map/check-points.json')).then((response) => response.json()),
     ])
       .then(([nextMeta, nextLabels, nextStreets, nextChecks]: [MapMeta, Label[], Label[], CheckPoint[]]) => {
         if (cancelled) return
@@ -98,7 +99,7 @@ export function MapView({
         setChecks(nextChecks)
         const image = new Image()
         image.decoding = 'async'
-        image.src = '/map/overview.png'
+        image.src = publicUrl('map/overview.png')
         image.onload = () => {
           overviewRef.current = image
           setPaint((value) => value + 1)
@@ -501,7 +502,7 @@ function drawMap(options: {
           if (!image) {
             const next = new Image()
             next.decoding = 'async'
-            next.src = `/map/tiles/${tileX}/${tileY}.png`
+            next.src = publicUrl(`map/tiles/${tileX}/${tileY}.png`)
             next.onload = onTile
             tiles.set(key, next)
           }

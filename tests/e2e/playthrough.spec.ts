@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 
 test('a team finishes the route on a phone screen in debug mode', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 })
-  await page.goto('/?debug=1')
+  await page.goto('?debug=1')
 
   await page.getByRole('button', { name: 'თამაში' }).click()
   await page.getByRole('textbox', { name: 'გუნდის კოდი' }).fill('ROSE')

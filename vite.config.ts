@@ -3,6 +3,7 @@ import preact from '@preact/preset-vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig(({ mode }) => ({
+  base: '/pinkroad/',
   plugins: [preact()],
   build: {
     outDir: mode === 'staging' ? 'dist-staging' : 'dist',
