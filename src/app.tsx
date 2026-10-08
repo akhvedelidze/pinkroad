@@ -21,7 +21,10 @@ export function App() {
         <PlayView onBack={() => setScreen('welcome')} />
       ) : (
       <main class="welcome">
-        <img class="brand-logo" src={publicUrl('pic/acibadem_logo.png')} alt="Acıbadem" />
+        <div class="brand-row">
+          <img class="brand-logo" src={publicUrl('pic/acibadem_logo.png')} alt="Acıbadem" />
+          <img class="brand-logo" src={publicUrl('pic/GeOF%20logo.png')} alt="GeOF" />
+        </div>
         <h1>მოგესალმებით</h1>
         <p class="event">ციფრული ბულვარი</p>
         <p class="route">ვარდისფერი მარშრუტი ბათუმში</p>

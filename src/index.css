@@ -74,11 +74,21 @@ body {
   margin: 0;
 }
 
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin: 0 0 8px;
+  container-type: inline-size;
+}
+
 .brand-logo {
   display: block;
-  width: min(240px, 72%);
-  height: auto;
-  margin: 0 0 8px;
+  height: min(76px, calc((100cqi - 14px) / 4));
+  width: auto;
+  margin: 0;
+  object-fit: contain;
 }
 
 h1 {
