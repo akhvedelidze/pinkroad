@@ -1,0 +1,61 @@
+{
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "stage", "order", "name", "location", "toleranceM", "clue", "taskId", "doctorNote", "letter"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^p[0-9]{2}$" },
+      "stage": { "enum": ["practice", "navigator", "expert", "bonus"] },
+      "order": { "type": "integer", "minimum": 1 },
+      "name": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["ka"],
+        "properties": { "ka": { "type": "string", "minLength": 1 } }
+      },
+      "location": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lat", "lng", "verified", "source"],
+        "properties": {
+          "lat": { "type": ["number", "null"] },
+          "lng": { "type": ["number", "null"] },
+          "verified": { "type": "boolean" },
+          "source": { "type": "string", "minLength": 1 }
+        }
+      },
+      "toleranceM": { "type": "number", "exclusiveMinimum": 0 },
+      "clue": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["riddle", "hint2", "fromPrevious"],
+        "properties": {
+          "riddle": { "type": "string", "minLength": 1 },
+          "hint2": { "type": "string", "minLength": 1 },
+          "fromPrevious": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "required": ["bearingText", "distanceM"],
+            "properties": {
+              "bearingText": { "type": "string", "minLength": 1 },
+              "distanceM": { "type": "integer", "minimum": 0 }
+            }
+          }
+        }
+      },
+      "taskId": { "type": "string", "minLength": 1 },
+      "doctorNote": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "reviewed"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "reviewed": { "type": "boolean" }
+        }
+      },
+      "letter": { "type": "null" }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "virtual-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:staging": "tsc -b && vite build --mode staging",
+    "build:prod": "node --experimental-strip-types scripts/check-content.ts --prod && tsc -b && vite build --mode production",
+    "preview": "vite preview",
+    "preview:staging": "vite preview --outDir dist-staging",
+    "map:render": "node --experimental-strip-types scripts/render-map.ts",
+    "check:content": "node --experimental-strip-types scripts/check-content.ts",
+    "hash:answer": "node --experimental-strip-types scripts/hash-answers.ts",
+    "verify": "node --experimental-strip-types scripts/verify.ts",
+    "test": "vitest run && playwright test",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@turf/bearing": "^7.4.0",
+    "@turf/distance": "^7.4.0",
+    "ajv": "^8.20.0",
+    "preact": "^10.29.8",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@preact/preset-vite": "^2.10.6",
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^24.13.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^4.1.11"
+  }
+}

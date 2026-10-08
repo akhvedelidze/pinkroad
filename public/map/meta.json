@@ -1,0 +1,13 @@
+{
+  "south": 41.5312428,
+  "north": 41.7170258,
+  "west": 41.5594872,
+  "east": 41.7456988,
+  "width": 3840,
+  "height": 5125,
+  "tileSize": 512,
+  "overviewWidth": 960,
+  "source": "OpenStreetMap relation 2009237 via Nominatim",
+  "retrieved": "2026-10-08T02:42:53.931Z",
+  "verified": false
+}

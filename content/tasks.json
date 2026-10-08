@@ -1,0 +1,432 @@
+{
+  "p01": {
+    "type": "mythfact",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "[[DOCTOR_FILL]] მითია თუ ფაქტი?",
+        "options": [
+          "მითი",
+          "ფაქტი"
+        ],
+        "answerHash": "70f5f7cddfd600a741ad46e3cd78a4757473367085e6419da774f559c9139455",
+        "salt": "ed8a2de728b1684d818fd9ff2a437046"
+      },
+      {
+        "q": "ეს წინადადება მითია თუ ფაქტი? [[DOCTOR_FILL]]",
+        "options": [
+          "მითი",
+          "ფაქტი"
+        ],
+        "answerHash": "86f1d8185d7e4064f28524961813af9add76e6509aed3bbf3c66f8e3a7fe6e9a",
+        "salt": "2cb653521393526319bd4e0aa8a5434e"
+      }
+    ]
+  },
+  "p02": {
+    "type": "mythfact",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "[[DOCTOR_FILL]] მითია თუ ფაქტი?",
+        "options": [
+          "მითი",
+          "ფაქტი"
+        ],
+        "answerHash": "0faf8ec8323c0d2bb057e62054d8057f3ea78456ca15151eb04dd585029f2da1",
+        "salt": "fbdaa1caa625a350938e8e5dbe968571"
+      },
+      {
+        "q": "ეს წინადადება მითია თუ ფაქტი? [[DOCTOR_FILL]]",
+        "options": [
+          "მითი",
+          "ფაქტი"
+        ],
+        "answerHash": "473967be091d782d693a49addfadba48f9f4f865c8079cb9e9e144b01023cf76",
+        "salt": "ffb429ab53ed9d33adcfd1542c78d358"
+      }
+    ]
+  },
+  "p03": {
+    "type": "anagram",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "დაალაგე ასოები სიტყვად.",
+        "letters": "იგკინინსრ",
+        "answerHash": "8090af8f2ce5506d33f85b90d827a5c58bfc554d8ededc22a59a68438047d69a",
+        "salt": "1e5cb812e2262909ceb11765dc67e1b2"
+      },
+      {
+        "q": "დაალაგე ასოები სიტყვად.",
+        "letters": "ნთალაომბრჯე",
+        "answerHash": "9ea5dc8be7415c5a8e4045d7e58d915450542e9008cdb44df3d9f7883ef0348d",
+        "salt": "b151b411da16d5abebbdfbd9f0adbcd2"
+      }
+    ]
+  },
+  "p04": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "5e9f30c46db5d1457ce3b9de04d99ca383f70f16abd27ca9048cb7198fdace46",
+        "salt": "bb7a635c2ec27b0135cdfd69e1f6ac6c"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "9ec3d6f99ee302cea5286383daf6796a43e0018c614227d15e569c6566f772f2",
+        "salt": "79196bb1722766b32a61c35b97fdd1dc"
+      }
+    ]
+  },
+  "p05": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "93bb655a0940c0096c4c1eec8f251f5934b9165513cd3713ef05f8e4a940ecd0",
+        "salt": "f132eb9fbd397361489fa8292b8dd68c"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "960ee736db90da53c8407fd6be4e5485992711aa66248839cfcb7857e1d4a77b",
+        "salt": "4ea9fd39dc9142155ad6099bc0f3f453"
+      }
+    ]
+  },
+  "p06": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "d970d35fbb326f93289a7d314864e733a3d9fcd1f47d7b915592b9b87da65963",
+        "salt": "22d3e49326b2c7aca0802974e6926616"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "3a863971fb0a79e1eadad5a37198efb6713ba040e7ca9fc69704165839321ed4",
+        "salt": "833f0a846e7fa5a29757b7b55915a22f"
+      }
+    ]
+  },
+  "p07": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "16a6c276ffae0af16090d37353c64289ba5447ff3a436ac99a417e20c7061bed",
+        "salt": "cb8508ccbeb6b1de85ddff823e5b7ef7"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "89880c6d1268ba3c30a7986e8e9c36ea88bef1fae46b40185de09642ecd30ede",
+        "salt": "afb3af99f04b848b1abfe8c2ec9e7ab4"
+      }
+    ]
+  },
+  "p08": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "fab52a3228886f0fe5b3febe29441e1e9f73e364c11096166eab303c1ba8e6a8",
+        "salt": "a31ff0b00a040119ac4e676649c5d694"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "10b8a80ecb5a0ecf078751b00ded1836b54e319bfe3420f1068637a66ddad2e0",
+        "salt": "9d87ece14bce4f2b63fb4b7f53613274"
+      }
+    ]
+  },
+  "p09": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "d63170c0174f9b15158d40ec1ecf4c9270f9c877c21cc974597020e14af07c75",
+        "salt": "5e614ed5478328699dbe986bc9fcc78d"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "1839570d1f8e848eddb71ed6ed9eb8631623faadb325aa5e1791e50678c6a2ea",
+        "salt": "1e007481d471c165cb070b2153531565"
+      }
+    ]
+  },
+  "p10": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "64f806203c019ba9d8d3f642c8eb45b8fc33fa11caac96916b88a7e8f7dd7821",
+        "salt": "508c90c89c106f701a51de3ea0bccb87"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "9839244088ad662de8e4040d0e19a0e6b0828cbd6cee70027d5c01301ea1062d",
+        "salt": "1b5b94e665a7c7da99f0d02c19971cfd"
+      }
+    ]
+  },
+  "p11": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "911a44116d496c389ec9560189cd6fb753284e91b95ce31171eef6fedef93bd1",
+        "salt": "207e22a63ce380c60c480d0222261b59"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "0f05fdc707a1b28290342da0689176e8c8438d005be7444f342f4853c62aa546",
+        "salt": "7bed04f7124028a63ca18f7c7b87a9bf"
+      }
+    ]
+  },
+  "p12": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "03841b484a78dad761452aff0cadf96fa9d28533e4798f85afa13b9b0b42b09a",
+        "salt": "a37f576b2181950b11ffce6dbe59156b"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "b2a234f0659b02c980afa7c6089aa1ba7e34ab776fa4501977468a278b6e9582",
+        "salt": "1e2be2b96b354ced113449fbbc017cad"
+      }
+    ]
+  },
+  "p13": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "76c90be2c365c5b24a9f6d49e73a2918b865fec0be358f20ab1e59a20863b171",
+        "salt": "e1665cbafd9e58951de410fb967a2754"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "3a94ee1b14a2d08f577902a3ffe0e3559adc10c72dcf6e4c4dc69ad8c806601f",
+        "salt": "ddde4abf6a9635f51403aa11db936d36"
+      }
+    ]
+  },
+  "p14": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "ae396c64d36bb966093af367ba789722ec3037a71adc195218ff025e0afd9f7f",
+        "salt": "aff2544d46af05d730451af357c80f2f"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "853dc1306f659fe8524314ff99f58fabe07e9946f7a3657e3f2dc4c25f4b194a",
+        "salt": "348c634428a92cfa7b58a3d003b3b726"
+      }
+    ]
+  },
+  "p15": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "1fd9607fe19bfb99fc498b53acd7a5cc2d48f2fc0aeb0ee0a679d28ea32ae5b8",
+        "salt": "d28541357abd648509e377ab7ba283f4"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "92be2e714ab9bb9304288df6259741826d89c9424b96fbd174becb33cb31f590",
+        "salt": "349c5d6d9b753168637dbef536e107c8"
+      }
+    ]
+  },
+  "p16": {
+    "type": "mcq",
+    "reviewed": false,
+    "variants": [
+      {
+        "q": "რომელია სწორი პასუხი? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "3dd66580df749d812e2b01d5d3a3c4f383142b1c1e36e28da17327352b04eba6",
+        "salt": "a5f8747d0ff852bef5281f460686b61f"
+      },
+      {
+        "q": "რომელ ვარიანტს ირჩევთ? [[DOCTOR_FILL]]",
+        "options": [
+          "[[DOCTOR_FILL]] ა",
+          "[[DOCTOR_FILL]] ბ",
+          "[[DOCTOR_FILL]] გ",
+          "[[DOCTOR_FILL]] დ"
+        ],
+        "answerHash": "053a01f3ad7d7e3c409a17c7159028c48d133f63ed9908dd08657df58aff2034",
+        "salt": "0f9c8bb58eee3aafcabff4432044aa89"
+      }
+    ]
+  }
+}

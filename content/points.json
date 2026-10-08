@@ -1,0 +1,463 @@
+[
+  {
+    "id": "p01",
+    "stage": "practice",
+    "order": 1,
+    "name": {
+      "ka": "ბათუმის შუქურა"
+    },
+    "location": {
+      "lat": 41.6558989,
+      "lng": 41.6410718,
+      "verified": true,
+      "source": "OSM way 1306367386 via Nominatim (ბათუმის შუქურა). Placement confirmed by the organizer."
+    },
+    "toleranceM": 150,
+    "clue": {
+      "riddle": "ბულვარის დასაწყისში თეთრი კოშკი გემებს გზას უნათებს.",
+      "hint2": "სანაპიროზე, პორტთან ახლოს.",
+      "fromPrevious": null
+    },
+    "taskId": "p01",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p02",
+    "stage": "practice",
+    "order": 2,
+    "name": {
+      "ka": "ევროპის მოედანი"
+    },
+    "location": {
+      "lat": 41.6509917,
+      "lng": 41.6360736,
+      "verified": false,
+      "source": "OSM way 96052551 via Nominatim (ევროპის მოედანი)"
+    },
+    "toleranceM": 150,
+    "clue": {
+      "riddle": "ქალაქის ცენტრში ქალის ქანდაკება ოქროს საწმისით.",
+      "hint2": "ქალაქის ცენტრში.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთ-დასავლეთით",
+        "distanceM": 686
+      }
+    },
+    "taskId": "p02",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p03",
+    "stage": "practice",
+    "order": 3,
+    "name": {
+      "ka": "პიაცა"
+    },
+    "location": {
+      "lat": 41.6495903,
+      "lng": 41.6411186,
+      "verified": false,
+      "source": "OSM way 294880812 via Nominatim (პიაცა მოედანი)"
+    },
+    "toleranceM": 150,
+    "clue": {
+      "riddle": "ძველ ბათუმში იტალიური მოედანი მოზაიკითა და საათიანი კოშკით.",
+      "hint2": "ცენტრში, ევროპის მოედანთან ახლოს.",
+      "fromPrevious": {
+        "bearingText": "აღმოსავლეთით",
+        "distanceM": 447
+      }
+    },
+    "taskId": "p03",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p04",
+    "stage": "navigator",
+    "order": 4,
+    "name": {
+      "ka": "საბაგირო „არგო“"
+    },
+    "location": {
+      "lat": 41.636619,
+      "lng": 41.6508791,
+      "verified": false,
+      "source": "OSM way 247589783 via Nominatim (საბაგირო „არგო“). Line center, not a chosen station."
+    },
+    "toleranceM": 80,
+    "clue": {
+      "riddle": "ნავსადგურთან, ბაქოს ქუჩიდან, კაბინები მთისკენ ადის.",
+      "hint2": "ქალაქის სამხრეთით, გორაკზე.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთ-აღმოსავლეთით",
+        "distanceM": 1655
+      }
+    },
+    "taskId": "p04",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p05",
+    "stage": "navigator",
+    "order": 5,
+    "name": {
+      "ka": "ალი და ნინო"
+    },
+    "location": {
+      "lat": 41.6555764,
+      "lng": 41.6430656,
+      "verified": false,
+      "source": "OSM node 3583075496 via Nominatim (ნინო და ალი)"
+    },
+    "toleranceM": 80,
+    "clue": {
+      "riddle": "ზღვის პირას, ბორბალთან, ორი შეყვარებული ერთმანეთს უახლოვდება და შორდება.",
+      "hint2": "ზღვის პირას.",
+      "fromPrevious": {
+        "bearingText": "ჩრდილოეთით",
+        "distanceM": 2206
+      }
+    },
+    "taskId": "p05",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p06",
+    "stage": "navigator",
+    "order": 6,
+    "name": {
+      "ka": "ანბანის კოშკი"
+    },
+    "location": {
+      "lat": 41.655963,
+      "lng": 41.6393501,
+      "verified": true,
+      "source": "OSM way 405852444 via Nominatim (ანბანის კოშკი). Placement confirmed by the organizer."
+    },
+    "toleranceM": 80,
+    "clue": {
+      "riddle": "ბულვარის დასაწყისში მაღალი კოშკი ქართული ასოებით.",
+      "hint2": "სანაპიროზე.",
+      "fromPrevious": {
+        "bearingText": "დასავლეთით",
+        "distanceM": 312
+      }
+    },
+    "taskId": "p06",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p07",
+    "stage": "navigator",
+    "order": 7,
+    "name": {
+      "ka": "პანორამული ბორბალი"
+    },
+    "location": {
+      "lat": 41.654102,
+      "lng": 41.6367371,
+      "verified": false,
+      "source": "OSM node 6822566652 via Overpass (Batumi Tower Ferris Wheel)"
+    },
+    "toleranceM": 80,
+    "clue": {
+      "riddle": "ზღვის პირას, ანბანის კოშკთან, უზარმაზარი ბორბალი კაბინებით.",
+      "hint2": "ცენტრში, მაღალი წრე.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთ-დასავლეთით",
+        "distanceM": 300
+      }
+    },
+    "taskId": "p07",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p08",
+    "stage": "expert",
+    "order": 8,
+    "name": {
+      "ka": "ნურიგელის ტბა"
+    },
+    "location": {
+      "lat": 41.6476073,
+      "lng": 41.6262168,
+      "verified": true,
+      "source": "OSM way 34910874 via Nominatim (ნურის ტბა). Placement confirmed by the organizer."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "ცენტრალურ პარკში, დელფინარიუმთან, ხეებით გარშემორტყმული ტბა.",
+      "hint2": "სანაპირო პარკში.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთ-დასავლეთით",
+        "distanceM": 1134
+      }
+    },
+    "taskId": "p08",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p09",
+    "stage": "expert",
+    "order": 9,
+    "name": {
+      "ka": "დრამატული თეატრი"
+    },
+    "location": {
+      "lat": 41.6528246,
+      "lng": 41.6383353,
+      "verified": false,
+      "source": "OSM way 96037256 via Nominatim (ბათუმის ი. ჭავჭავაძის სახელობის დრამატული თეატრი)"
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "რუსთაველის გამზირზე, ნეპტუნის შადრევნის უკან, სვეტებიანი შენობა.",
+      "hint2": "მოედანთან ახლოს.",
+      "fromPrevious": {
+        "bearingText": "ჩრდილო-აღმოსავლეთით",
+        "distanceM": 1162
+      }
+    },
+    "taskId": "p09",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p10",
+    "stage": "expert",
+    "order": 10,
+    "name": {
+      "ka": "ბულვარი"
+    },
+    "location": {
+      "lat": 41.6534205,
+      "lng": 41.6304731,
+      "verified": false,
+      "source": "OSM way 654147258 via Overpass (beachvolleyball pitch on the boulevard). Center of the court, about 27 m by 24 m."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "ჩონგბურთის კორტები ბულვარში.",
+      "hint2": "ზღვასა და ქალაქს შორის.",
+      "fromPrevious": {
+        "bearingText": "დასავლეთით",
+        "distanceM": 657
+      }
+    },
+    "taskId": "p10",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p11",
+    "stage": "expert",
+    "order": 11,
+    "name": {
+      "ka": "ბათუმის აეროპორტი"
+    },
+    "location": {
+      "lat": 41.6093233,
+      "lng": 41.6011929,
+      "verified": false,
+      "source": "OSM way 79600085 via Nominatim (ბათუმის საერთაშორისო აეროპორტი). Aerodrome centroid, not a chosen terminal."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "ქალაქის სამხრეთით, ზღვასთან, ბათუმის საჰაერო კარიბჭე.",
+      "hint2": "ქალაქის სამხრეთით.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთ-დასავლეთით",
+        "distanceM": 5474
+      }
+    },
+    "taskId": "p11",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p12",
+    "stage": "expert",
+    "order": 12,
+    "name": {
+      "ka": "დელფინარიუმი"
+    },
+    "location": {
+      "lat": 41.6477179,
+      "lng": 41.6235285,
+      "verified": false,
+      "source": "OSM way 96046853 via Nominatim (ბათუმის დელფინარიუმი). Building center, not the nearby bus stop."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "ნურიგელის ტბის ზღვისკენ მხარეს დელფინების წარმოდგენები იმართება.",
+      "hint2": "რუსთაველის ქუჩაზე.",
+      "fromPrevious": {
+        "bearingText": "ჩრდილო-აღმოსავლეთით",
+        "distanceM": 4655
+      }
+    },
+    "taskId": "p12",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p13",
+    "stage": "expert",
+    "order": 13,
+    "name": {
+      "ka": "მოცეკვავე შადრევნები"
+    },
+    "location": {
+      "lat": 41.6413421,
+      "lng": 41.6132057,
+      "verified": false,
+      "source": "OSM way 93574740 via Nominatim (მოცეკვავე შადრევანი, Dancing fountain). A second same-name fountain, way 82490627 (Music fountain), was not used."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "არდაგანის ტბაში წყალი მუსიკაზე ცეკვავს.",
+      "hint2": "ბულვარის დასავლეთ ნაწილში.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთ-დასავლეთით",
+        "distanceM": 1113
+      }
+    },
+    "taskId": "p13",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p14",
+    "stage": "expert",
+    "order": 14,
+    "name": {
+      "ka": "აჯიბადემის საინფორმაციო ცენტრი"
+    },
+    "location": {
+      "lat": 41.6494986,
+      "lng": 41.6363505,
+      "verified": false,
+      "source": "OSM way 322842397 via Nominatim, building at 2 Zurab Gorgiladze Street. OSM has no Acibadem name; tagged building:part=apartments. Address node 11116236952 was not used."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "გორგილაძის №2-ში ლურჯი წარწერა „ACIBADEM“.",
+      "hint2": "ძველ ბათუმში, ნომერი 2.",
+      "fromPrevious": {
+        "bearingText": "ჩრდილო-აღმოსავლეთით",
+        "distanceM": 2126
+      }
+    },
+    "taskId": "p14",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p15",
+    "stage": "expert",
+    "order": 15,
+    "name": {
+      "ka": "ბათუმის მერია"
+    },
+    "location": {
+      "lat": 41.6344931,
+      "lng": 41.6307111,
+      "verified": false,
+      "source": "OSM way 409856039 via Nominatim (ბათუმის მერია, ლერმონტოვის ქუჩა 90ა)."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "ქალაქის მმართველობის შენობა.",
+      "hint2": "ლერმონტოვის ქუჩაზე.",
+      "fromPrevious": {
+        "bearingText": "სამხრეთით",
+        "distanceM": 1733
+      }
+    },
+    "taskId": "p15",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  },
+  {
+    "id": "p16",
+    "stage": "expert",
+    "order": 16,
+    "name": {
+      "ka": "საზღვაო ნავსადგური"
+    },
+    "location": {
+      "lat": 41.6494057,
+      "lng": 41.6594102,
+      "verified": false,
+      "source": "OSM way 96035137 via Nominatim (ბათუმის საზღვაო ნავსადგური). Industrial area centroid, not a chosen gate."
+    },
+    "toleranceM": 60,
+    "clue": {
+      "riddle": "ძველი ბათუმის სანაპიროსთან დიდი გემები და სატვირთო ამწეები.",
+      "hint2": "სანაპიროს ჩრდილოეთით.",
+      "fromPrevious": {
+        "bearingText": "ჩრდილო-აღმოსავლეთით",
+        "distanceM": 2905
+      }
+    },
+    "taskId": "p16",
+    "doctorNote": {
+      "text": "[[DOCTOR_FILL]]",
+      "reviewed": false
+    },
+    "letter": null
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "scoring": {
+    "locationByAttempt": [
+      5,
+      3,
+      1,
+      0
+    ],
+    "taskByAttempt": [
+      10,
+      7,
+      4,
+      2
+    ],
+    "hint2Cost": 2,
+    "bonusPoints": 5,
+    "minPointScore": 0
+  },
+  "penalties": {
+    "wrongConfirmPauseSec": [
+      10,
+      20,
+      40,
+      40
+    ]
+  },
+  "tolerances": {
+    "practice": 150,
+    "navigator": 80,
+    "expert": 60,
+    "bonus": 100
+  },
+  "mapBounds": {
+    "south": 41.5312428,
+    "west": 41.5594872,
+    "north": 41.7170258,
+    "east": 41.7456988
+  },
+  "expectedDurationMin": 50,
+  "minPlausibleDurationMin": 15,
+  "formUrl": null
+}

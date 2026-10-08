@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scoring", "penalties", "tolerances", "mapBounds", "expectedDurationMin", "minPlausibleDurationMin", "formUrl"],
+  "properties": {
+    "scoring": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["locationByAttempt", "taskByAttempt", "hint2Cost", "bonusPoints", "minPointScore"],
+      "properties": {
+        "locationByAttempt": { "type": "array", "items": { "type": "number", "minimum": 0 }, "minItems": 1 },
+        "taskByAttempt": { "type": "array", "items": { "type": "number", "minimum": 0 }, "minItems": 1 },
+        "hint2Cost": { "type": "number", "minimum": 0 },
+        "bonusPoints": { "type": "number", "minimum": 0 },
+        "minPointScore": { "type": "number", "minimum": 0 }
+      }
+    },
+    "penalties": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wrongConfirmPauseSec"],
+      "properties": {
+        "wrongConfirmPauseSec": { "type": "array", "items": { "type": "number", "minimum": 0 }, "minItems": 1 }
+      }
+    },
+    "tolerances": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["practice", "navigator", "expert", "bonus"],
+      "properties": {
+        "practice": { "type": "number", "exclusiveMinimum": 0 },
+        "navigator": { "type": "number", "exclusiveMinimum": 0 },
+        "expert": { "type": "number", "exclusiveMinimum": 0 },
+        "bonus": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "mapBounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["south", "west", "north", "east"],
+      "properties": {
+        "south": { "type": "number" },
+        "west": { "type": "number" },
+        "north": { "type": "number" },
+        "east": { "type": "number" }
+      }
+    },
+    "expectedDurationMin": { "type": "number", "exclusiveMinimum": 0 },
+    "minPlausibleDurationMin": { "type": "number", "exclusiveMinimum": 0 },
+    "formUrl": { "type": ["string", "null"] }
+  }
+}
